@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff4f1">
+    <meta name="description" content="A little birthday surprise made just for Arthika.">
+    <title>Happy Birthday, Arthika! ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="#welcome">little<span>♡</span>surprise</a>
+        <button id="musicToggle" class="music-button" type="button" aria-label="Play birthday music" aria-pressed="false">♪ <span id="musicLabel">Play music</span></button>
+    </header>
+
+    <main>
+        <section class="chapter hero" id="welcome">
+            <div class="sparkle sparkle-one">✦</div>
+            <div class="sparkle sparkle-two">✧</div>
+            <p class="eyebrow">A LITTLE SOMETHING JUST FOR YOU</p>
+            <div class="hero-heart" aria-hidden="true">♡</div>
+            <h1>Hey, Birthday<br><em>Girl!</em></h1>
+            <p class="hero-copy">Someone very special deserves a very special surprise.</p>
+            <p class="name-script">Koduru Arthika Reddy</p>
+            <button class="primary-button" data-next="birthday">Open your surprise <span>♡</span></button>
+            <p class="tiny-note">Made with a little extra love ✨</p>
+            <span class="scroll-cue" aria-hidden="true">↓</span>
+        </section>
+
+        <section class="chapter birthday" id="birthday">
+            <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+            <h2>Our favourite<br><em>birthday girl.</em></h2>
+            <div class="photo-grid">
+                <figure class="photo-frame photo-main">
+                    <span class="photo-sticker">♡</span>
+                    <img src="assets/arthika-1.jpeg" alt="Portrait of Koduru Arthika Reddy" class="portrait" loading="lazy">
+                    <figcaption class="photo-caption">A little sunshine in human form ♡</figcaption>
+                </figure>
+                <figure class="photo-frame photo-small">
+                    <img src="assets/arthika-2.jpeg" alt="A favourite memory of Arthika" loading="lazy">
+                    <figcaption class="photo-caption">Pretty little memories ✨</figcaption>
+                </figure>
+                <figure class="photo-frame photo-small">
+                    <img src="assets/arthika-3.jpeg" alt="Another happy memory of Arthika" loading="lazy">
+                    <figcaption class="photo-caption">Keep that smile ♡</figcaption>
+                </figure>
+                <figure class="photo-frame photo-small">
+                    <img src="assets/arthika-4.jpeg" alt="A special birthday memory of Arthika" loading="lazy">
+                    <figcaption class="photo-caption">One for the memory book</figcaption>
+                </figure>
+            </div>
+            <p class="body-copy">Another year of being wonderfully, uniquely YOU. May your days be full of laughter, lovely surprises, and all the little things that make you smile.</p>
+            <button class="text-button" data-next="letter">There's more for you <span>→</span></button>
+        </section>
+
+        <section class="chapter letter-section" id="letter">
+            <p class="eyebrow">FROM YOUR BESTIE, WITH LOVE</p>
+            <h2>A tiny letter,<br><em>a whole lot of love.</em></h2>
+            <button id="letterToggle" class="letter-card" aria-expanded="false" aria-controls="letterMessage">
+        <span class="envelope-icon">💌</span><span class="letter-title">A letter for Arthika</span>
+        <span class="letter-hint">Tap to open your letter</span><span class="letter-seal">♡</span>
+      </button>
+            <article id="letterMessage" class="letter-message" hidden>
+                <p class="letter-greeting">Dear Arthika, ♡</p>
+                <p>Happiest birthday to one of the most special people in my life! 🥹💗</p>
+                <p>I hope this new chapter brings you endless happiness, unexpected adventures, beautiful memories, and a thousand reasons to smile.</p>
+                <p>Never forget how amazing you are. Keep being your lovely, silly, wonderful self. The world is brighter with you in it!</p>
+                <p>Here's to more laughter, more crazy moments, and more memories worth keeping forever. 🫶</p>
+                <p class="letter-signoff">Lots of love, always ♡<br><span>Your bestie</span></p>
+                <p class="edit-note">You can edit this message in index.html to add your own memories or inside jokes.</p>
+            </article>
+            <button class="primary-button" data-next="surprise">One last surprise <span>✨</span></button>
+        </section>
+
+        <section class="chapter finale" id="surprise">
+            <p class="eyebrow">YOUR MOMENT, YOUR WISH</p>
+            <h2>Make a wish,<br><em>birthday girl!</em></h2>
+            <div class="cake" aria-label="A birthday cake with candles">
+                <div class="candle candle-one"><span></span></div>
+                <div class="candle candle-two"><span></span></div>
+                <div class="candle candle-three"><span></span></div>
+                <div class="icing"></div>
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+                <div class="cake-plate"></div>
+            </div>
+            <p id="wishText" class="wish-copy">Close your eyes, make a wish, and tap below. ✨</p>
+            <button id="wishButton" class="primary-button">Make a wish! 🎂</button>
+            <div id="finalMessage" class="final-message" hidden>
+                <div class="final-heart">♡</div>
+                <h3>Happy Birthday,<br>Arthika!</h3>
+                <p>May your wishes find their way to you, your smile never fade, and your year be as lovely as your heart. 💗</p>
+                <p class="forever-note">You deserve all the happiness. ♡</p>
+                <button id="replayButton" class="text-button">Experience the surprise again ↻</button>
+            </div>
+            <p class="tiny-note">A little webpage, a whole lot of love.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ♡, just for Arthika</p>
+    </footer>
+    <audio id="birthdayMusic" loop preload="none"><source src="assets/birthday-music.mp3" type="audio/mpeg"></audio>
+</body>
+
+</html>
